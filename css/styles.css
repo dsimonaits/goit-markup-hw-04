@@ -128,7 +128,7 @@ img {
   color: var(--accent-color);
 }
 
-.auth-nav .item + .item {
+.auth-nav .item:last-child {
   margin-left: 50px;
 }
 
@@ -403,6 +403,35 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.team-name-wrapper .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links_social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  margin-top: 16px;
+
+  fill: #afb1b8;
+}
+
+.social-links_social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links_social-items:hover,
+.social-links_social-items:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 /* projects portfolio */
