@@ -1,13 +1,14 @@
 :root {
   --main-color: #757575;
   --secondary-color: #212121;
+  --extra-color: #f5f4fa;
 
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --grey-color: #2f303a;
 
-  --team-color: #f5f4fa;
-  --adress-color: #ffffff99;
+  --adress-color: #ffffff;
+  --icons-color: #afb1b8;
 }
 
 .body {
@@ -173,7 +174,7 @@ img {
   max-width: 1600px;
   height: 600px;
 
-  background-color: #2f303a;
+  background-color: var(--grey-color);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,7 +226,7 @@ img {
   padding: 6px 22px 6px 22px;
 
   color: var(--secondary-color);
-  background-color: var(--team-color);
+  background-color: var(--extra-color);
 
   font-family: roboto, sans-serif;
   font-weight: 500;
@@ -334,7 +335,7 @@ img {
   height: 120px;
 
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--extra-color);
 }
 
 /* work list */
@@ -354,8 +355,8 @@ img {
 
 /* team */
 
-.section.team {
-  background-color: var(--team-color);
+.ourteam.section {
+  background-color: var(--extra-color);
 }
 
 .container .team {
@@ -380,8 +381,6 @@ img {
 
 .team.list {
   margin-top: 50px;
-
-  background-color: var(--team-color);
 }
 
 .team .team-name-wrapper {
@@ -421,7 +420,7 @@ img {
   background-color: var(--white-color);
   margin-top: 16px;
 
-  fill: #afb1b8;
+  fill: var(--icons-color);
 }
 
 .social-links_social-items:not(:last-child) {
@@ -449,7 +448,6 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  display: flex;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
