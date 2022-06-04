@@ -449,11 +449,17 @@ img {
   width: 170px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
   margin-top: 50px;
 
-  fill: var(--main-color);
+  fill: var(--icons-color);
+}
+
+.clients-items:hover,
+.clients-items:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* projects portfolio */
