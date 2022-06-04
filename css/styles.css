@@ -434,6 +434,30 @@ img {
   fill: var(--white-color);
 }
 
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-items:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  display: flex;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-top: 50px;
+
+  fill: var(--main-color);
+}
+
 /* projects portfolio */
 
 .section-title.our-portfolio {
