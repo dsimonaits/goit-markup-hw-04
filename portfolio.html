@@ -30,8 +30,18 @@
             </nav>
     
             <ul class="auth-nav list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <svg class="icon envelope" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    <a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <svg class="icon smartphone" width="10px" height="16px">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="auth-nav-link">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -153,15 +163,53 @@
     <!--Подвал-->
     <footer class="footer">
         <div class="container">
-            <a class="footer-logo" href="./index.html">Web<span class="footer-logo span">Studio</span></a>
-            <address>
+            <address class="footer-address">
+                <a class="footer-logo" href="./index.html">Web<span class="footer-logo span">Studio</span></a>
                 <ul class="address list">
-                    <li class="item"><a href="https://goo.gl/maps/AirsbdC57sYQPZAz8" target="_blank"
-                            rel="noopener noreferrer" class="footer-link address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="item"><a href="mailto:info@dexample.com" class="footer-link">info@example.com</a></li>
-                    <li class="item"><a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a></li>
+                    <li class="item-address">
+                        <a href="https://goo.gl/maps/AirsbdC57sYQPZAz8" target="_blank" rel="noopener noreferrer"
+                            class="footer-link address">г. Киев, пр-т Леси Украинки, 26
+                        </a>
+                    </li>
+                    <li class="item-address"><a href="mailto:info@dexample.com"
+                            class="footer-link link">info@example.com</a></li>
+                    <li class="item-address"><a href="tel:+380991111111" class="footer-link link">+38 099 111 11 11</a></li>
                 </ul>
             </address>
+    
+            <div class="connect">
+                <h2>присоединяйтесь</h2>
+                <ul class="connect-links list">
+                    <li class="links-item">
+                        <a href="" class="connect-links_social-items">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="links-item">
+                        <a href="" class="connect-links_social-items">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="links-item">
+                        <a href="" class="connect-links_social-items">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="links-item">
+                        <a href="" class="connect-links_social-items">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
