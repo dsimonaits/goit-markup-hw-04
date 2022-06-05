@@ -345,7 +345,8 @@ img {
   background-color: var(--extra-color);
 }
 
-.container .team {
+.container .team,
+.social-links {
   display: flex;
 }
 
@@ -404,12 +405,15 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
-  margin-top: 16px;
 
   fill: var(--icons-color);
 }
 
-.social-links_social-items:not(:last-child) {
+.social-links .links-item {
+  margin-top: 16px;
+}
+
+.social-links .links-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -428,7 +432,7 @@ img {
 .clients-items:not(:last-child) {
   margin-right: 30px;
 }
-.clients-items {
+.clients-items .item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,8 +446,8 @@ img {
   fill: var(--icons-color);
 }
 
-.clients-items:hover,
-.clients-items:focus {
+.clients-items .item:hover,
+.clients-items .item:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
