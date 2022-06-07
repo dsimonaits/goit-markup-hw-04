@@ -155,8 +155,6 @@ img {
 /* hero */
 
 .hero {
-  display: flex;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -165,7 +163,7 @@ img {
   height: 600px;
 
   background-color: var(--grey-color);
-
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -247,18 +245,7 @@ img {
 
 /* section  */
 
-.section h1 {
-  color: var(--secondary-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.section h2 {
+.section .main-titel {
   color: var(--secondary-color);
 
   font-weight: 700;
@@ -374,8 +361,8 @@ img {
 }
 
 .team .team-name-wrapper {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team p {
@@ -430,12 +417,13 @@ img {
 
 .clients-list {
   display: flex;
+  margin-top: 50px;
 }
 
 .clients-items:not(:last-child) {
   margin-right: 30px;
 }
-.clients-items .item {
+.clients-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,13 +432,12 @@ img {
 
   border: 1px solid var(--icons-color);
   border-radius: 4px;
-  margin-top: 50px;
 
   fill: var(--icons-color);
 }
 
-.clients-items .item:hover,
-.clients-items .item:focus {
+.clients-item:hover,
+.clients-item:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -483,12 +470,23 @@ img {
   margin-top: 50px;
 }
 
-.container .projects {
+.projects-title {
+  color: var(--secondary-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.projects {
   display: flex;
   flex-wrap: wrap;
 }
 
 .projects-link {
+  display: block;
   color: var(--main-color);
 
   font-size: 16px;
@@ -501,8 +499,8 @@ img {
   margin-bottom: 30px;
 }
 
-.projects .item:hover,
-.projects .item:focus {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -526,16 +524,6 @@ img {
   margin-bottom: 0px;
 }
 
-.projects h2 {
-  color: var(--secondary-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
 /* footer */
 
 .footer {
@@ -549,6 +537,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -603,7 +592,7 @@ img {
 
 /* Connect */
 
-.connect h2 {
+.connect-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -615,11 +604,11 @@ img {
 
 .connect {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .connect-links {
   display: flex;
+  margin-top: 20px;
 }
 
 .connect-links_social-items {
@@ -633,10 +622,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 
   fill: var(--white-color);
-}
-
-.connect-links .links-item {
-  margin-top: 20px;
 }
 
 .connect-links .links-item:not(:last-child) {
