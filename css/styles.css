@@ -420,7 +420,7 @@ img {
   margin-top: 50px;
 }
 
-.clients-items-list:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-link {
