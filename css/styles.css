@@ -423,7 +423,7 @@ img {
 .clients-items-list:not(:last-child) {
   margin-right: 30px;
 }
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,8 +436,8 @@ img {
   fill: var(--icons-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
